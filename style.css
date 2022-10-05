@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main-div nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.nav-items {
+    display: flex;
+    gap: 3rem;
+    margin-left: 29rem;
+}
+
+nav img{
+    width: 8rem;
+}
+
+.nav-items h5 {
+    color: #1F2873;
+}
+
+.signin-btn {
+    width: 8.8rem;
+    height: 2rem;
+    border-radius: 1rem;
+    pad: 0.5rem;
+    border: none;
+    outline: none;
+    color: white;
+    background-image:
+        linear-gradient(to right, #7e3fe4 0%, #D578E5 51%, #FF8ADC 103%);
+        transition: all 300 ease-in-out;
+}
+.signin-btn:hover {
+    cursor: pointer;
+    transition: all 300 ease-in-out;
+    background-image:
+    linear-gradient(to right, #5119ac 0%, #832294 51%, #6b1150 103%);
+    transform: scale(1) scale(1.1, 1.1);
+}
+
+.intro-section {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.left-section {
+    margin-left: 13.8rem;
+    margin-top: 4rem;
+    width: 50rem;
+}
+
+.left-section h1 {
+    font-size: 6rem;
+    color: #1F2873;
+}
+
+.left-section h4 {
+    font-size: 1.7rem;
+    color: #565A7E;
+    margin: 3rem 0;
+}
+
+.learn-more-btn {
+    width: 15rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    background-image:
+        linear-gradient(to right, #7e3fe4 0%, #D578E5 51%, #FF8ADC 103%);
+    transition: all 500 ease-in-out;
+    color: #ffff;
+}
+
+.learn-more-btn:hover {
+    cursor: pointer;
+    transition: all 300 ease-in-out;
+    background-image:
+    linear-gradient(to right, #5119ac 0%, #832294 51%, #6b1150 103%);
+    transform: scale(1) scale(1.1, 1.1);
+}
+
+.right {
+    width: 55rem;
+    height: 40rem;
+}
+
+.right img {
+
+    height: 60rem;
+    position: absolute;
+    top: 0rem;
+    right: 0;
+    z-index: -10;
+}
+
+.top {
+    margin-top: 1rem;
+    margin-right: 5rem;
+    width: 55rem;
+}
+
+.vector img {
+    margin-top: 37rem;
+    height: 6rem;
+    margin-right: 29rem;
+}
+
+.vector-dot img {
+    margin-top: 37rem;
+    height: 1.5rem;
+    margin-right: 28rem;
+}
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:345px){
+    html{
+        font-size: 32%;
+    }
+    
+    .learn-more-btn,.signin-btn{
+        font-size: 1.5rem;
+    }
+    .intro-section{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .bk-img img,.tp-img img{
+        position: absolute;
+        left: 0;
+        top: 45rem;
+    }
+
+    .vector-dot img,.vector img{
+        margin-top: 88rem;
+        position:absolute;
+        left: 2rem;
+        bottom: 10rem;
+    }
+    .nav-items{
+        display: none;
+    }
+}
+
